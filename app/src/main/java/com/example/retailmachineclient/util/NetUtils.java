@@ -897,6 +897,7 @@ public class NetUtils {
 
 
     public boolean checkOnlineState(Context mContext) {
+        //test
         ConnectivityManager CManager = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo NInfo = CManager.getActiveNetworkInfo();
         try {
