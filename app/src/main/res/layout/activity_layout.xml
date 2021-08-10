@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_page"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/layout_sale_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textColor="@color/itemTextBlack"
+                android:textSize="20sp"
+                android:text="@string/user_saleid"
+                />
+            <EditText
+                android:id="@+id/sales_id"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:text=""
+                android:textColor="@color/itemTextBlack"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/bg_edit"
+                android:hint="请输入用户的SALESID"
+                android:textColorHint="@color/default_pls"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            >
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选购数量:"
+                />
+
+            <EditText
+                android:id="@+id/machine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_toRightOf="@+id/tv_password"
+
+                />
+        </LinearLayout>
+        <CheckBox
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/is_test"
+            android:text="测试环境数据"
+            />
+
+        <Button
+            android:id="@+id/startLogin"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_login"
+            android:textSize="26sp"
+            android:text="@string/text_login"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

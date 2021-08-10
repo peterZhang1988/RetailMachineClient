@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/car_delete"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toRightOf="@id/car_price"
+        android:src="@mipmap/reduce_icon" />
+
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/car_name"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/car_image"
+        android:gravity="center_vertical"
+        android:text="$3:00"
+        android:textColor="@color/itemTextBlack"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@id/car_image"
+        android:gravity="center_vertical"
+        android:text="可口可乐"
+        android:lines="1"
+        android:textColor="@color/itemTextBlack"
+        android:textSize="26sp" />
+
+</RelativeLayout>

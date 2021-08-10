@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_page"
+    android:id="@+id/layout_all"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="@dimen/btn_horizon_size"
+        android:layout_height="@dimen/btn_vertical_size"
+        android:layout_marginLeft="@dimen/all_margin_left"
+        android:layout_marginTop="@dimen/btn_vertical_margin_top_size"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/default_txt_lan"
+        android:textSize="@dimen/btn_text_size"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/btChinese"
+        android:layout_width="@dimen/btn_horizon_size"
+        android:layout_height="@dimen/btn_vertical_size"
+        android:layout_marginLeft="@dimen/btn_horizon_margin_left_size"
+        android:layout_marginTop="@dimen/btn_vertical_margin_top_size"
+        android:layout_toRightOf="@id/time"
+
+        android:gravity="center"
+        android:text="@string/chinese_text"
+        android:textColor="@color/textSelectColor"
+        android:textSize="@dimen/btn_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btEnglish"
+        android:layout_width="@dimen/btn_horizon_size"
+        android:layout_height="@dimen/btn_vertical_size"
+        android:layout_marginLeft="@dimen/btn_horizon_margin_left_size"
+        android:layout_marginTop="@dimen/btn_vertical_margin_top_size"
+        android:layout_toRightOf="@id/btChinese"
+        android:gravity="center"
+        android:text="@string/english_text"
+        android:textColor="@color/textDefaultColor"
+        android:textSize="@dimen/btn_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btFrench"
+        android:layout_width="186dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/french_text"
+        android:textColor="@color/textDefaultColor"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/btEnglish"
+        android:visibility="invisible"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/lineColor"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/btChinese"
+        />
+
+    <View
+        android:id="@+id/bottom_helper"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"/>
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="666dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/bottom_helper"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:src="@mipmap/tel_phone_96" />
+
+        <TextView
+            android:id="@+id/tvTelephonetip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/urgent_tel_text"
+            android:textColor="@color/default_txt_lan"
+            android:textSize="@dimen/txt_tel_size" />
+
+        <TextView
+            android:id="@+id/tvTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="13621461541"
+            android:textColor="@color/default_txt_lan"
+            android:textSize="@dimen/txt_tel_size" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请刷卡："
+        android:textColor="@color/black"
+        android:layout_below="@+id/time"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="签到："
+        android:layout_below="@+id/tip"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/consume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:text="消费："
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:layout_below="@id/consume"
+        android:id="@+id/show"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:background="@color/black"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/point_img"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        />
+<!--    android:src="@drawable/pos_position"-->
+
+    <TextView
+        android:id="@+id/point_pos"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="POS机位置"
+        android:gravity="center_vertical|right"
+        android:textSize="24dp"
+        android:textColor="@color/default_txt_lan"
+        android:layout_toLeftOf="@+id/point_img"
+        />
+
+    <TextView
+        android:id="@+id/choice_tip"
+        android:layout_width="537dp"
+        android:layout_height="wrap_content"
+        android:text="请将银行卡选择一种方式刷卡支付:"
+        android:textColor="@color/itemTextBlack"
+        android:textSize="@dimen/txt_size_card_type_tip"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="@dimen/all_margin_left"
+        />
+
+    <TextView
+        android:id="@+id/choice_tip1"
+        android:layout_width="537dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice_tip"
+        android:textColor="@color/default_txt_lan"
+        android:text="①请将银行卡放到POS机屏幕上方区域进行感应支付:"
+        android:layout_marginLeft="@dimen/all_margin_left"
+        android:textSize="@dimen/txt_size_card_type"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/choice_tip2"
+        android:layout_width="537dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice_tip1"
+        android:textColor="@color/default_txt_lan"
+        android:text="②请将银行卡磁条面朝向POS机内侧，将磁卡匀速划过磁卡卡槽"
+        android:layout_marginLeft="@dimen/all_margin_left"
+        android:textSize="@dimen/txt_size_card_type"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/choice_tip3"
+        android:layout_width="537dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice_tip2"
+        android:textColor="@color/default_txt_lan"
+        android:text="③请将银行卡IC卡芯片面朝上，插入POS机下方IC卡槽内"
+        android:layout_marginLeft="@dimen/all_margin_left"
+        android:textSize="@dimen/txt_size_card_type"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/post_card"
+        android:layout_width="320dp"
+        android:layout_height="723dp"
+        android:src="@mipmap/pos_post_card_cn"
+        android:layout_marginTop="152dp"
+        android:layout_marginLeft="777dp"
+        />
+    <TextView
+        android:id="@+id/post_card_tip"
+        android:layout_width="620dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="627dp"
+        android:layout_below="@+id/post_card"
+        android:text="操作一:请持卡刷卡"
+        android:textSize="26sp"
+        android:textColor="@color/itemTextBlack"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+    <ImageView
+        android:id="@+id/edit_psd"
+        android:layout_width="320dp"
+        android:layout_height="620dp"
+        android:src="@mipmap/pos_edit_psd_cn"
+        android:layout_toRightOf="@+id/post_card"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="230dp"
+
+        />
+    <TextView
+        android:id="@+id/edit_psd_tip"
+        android:layout_width="620dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/post_card"
+        android:layout_toRightOf="@+id/post_card_tip"
+        android:text="操作二:请输入密码"
+        android:textSize="26sp"
+
+        android:textColor="@color/itemTextBlack"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/cancel_image"
+        android:layout_width="360dp"
+        android:layout_height="720dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/line1"
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/cancel_image_tip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="@color/itemTextBlack"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cancel_image"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

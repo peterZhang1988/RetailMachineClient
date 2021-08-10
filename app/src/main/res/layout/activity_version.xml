@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_all_page">
+
+    <RelativeLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="26sp"
+            android:text="返回"
+            android:background="@drawable/bt_bg_lan"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:text="软件版本信息"
+            />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="保存"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="300dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/latest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/current"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载最新版本"
+        android:textSize="30dp"
+        android:textColor="@color/itemTextWhite"
+        android:background="@drawable/bg_login"
+
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/latest"
+        android:gravity="center_horizontal"
+
+        android:padding="15dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

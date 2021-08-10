@@ -1,0 +1,6 @@
+include ':app'
+//include ':mycard'
+rootProject.name = "RetailMachineClient"
+
+
+include ':SerialPortLibrary'

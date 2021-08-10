@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">RetailMachineClient</string>
+
+    <string name="surplus_text">剩余</string>
+    <string name="money_type_text">¥ </string>
+    <string name="shopping_cart">购物车</string>
+    <string name="goto_pay_text">前往结算</string>
+    <string name="goods_num_text">商品总数:</string>
+    <string name="goods_total_money_text">总计:</string>
+    <string name="chinese_text">中文</string>
+    <string name="english_text">英文</string>
+    <string name="french_text">法文</string>
+    <string name="cart_empty_tip">你的购物车为空，马上来选购吧!</string>
+    <string name="has_three_good_text">你最多可以添加 %1$d 件物品</string>
+    <string name="add_text">添加</string>
+    <string name="pay_by_code_text">手机扫描二维码付款</string>
+    <string name="pay_by_face_text">人脸支付</string>
+    <string name="pay_by_band_card_text">刷卡支付</string>
+    <string name="point_look_face_text">点击刷脸</string>
+<!--    右侧POS处刷卡-->
+    <string name="use_band_card_tip_text">点击进入</string>
+    <string name="urgent_tel_text">紧急电话:</string>
+    <string name="look_face_tip_text">请对正人脸到屏幕显示中央</string>
+    <string name="pay_success_text">购买成功 Successful purchase</string>
+    <string name="take_away_goods_text">你已完成支付请取走你的货物</string>
+    <string name="goto_first_text">返回首页</string>
+    <string name="pay_fail_text">支付失败</string>
+    <string name="return_pay_text">返回支付</string>
+    <string name="user_land_text">用户登录</string>
+    <string name="edit_username_text">请输入用户名</string>
+    <string name="edit_password_text">请输入密码</string>
+    <string name="land_text">登录</string>
+    <string name="add_success_text">添加成功</string>
+    <string name="shipments_want_text">出货中&#8230;,请稍后</string>
+    <string name="shipments_success_text">出货成功:请取走你的货物</string>
+    <string name="shipments_fail_text">   出货失败:请电话联系技术人员</string>
+
+    <string name="shipments_want_en_text">In shipment&#8230;,Please wait</string>
+    <string name="shipments_success_en_text">Shipment success: please take your goods</string>
+    <string name="shipments_fail_en_text">   Shipment failure: please call the technician</string>
+
+
+    <string name="empty_cart_not_pay">当前购物车为空，请选购商品。</string>
+    <string name="delete_success">删除成功</string>
+    <string name="empty_text"> </string>
+
+
+
+    <string name="pay_success_goto_result"> 支付成功,跳转出货页面</string>
+    <string name="pay_fail_goto_goods"> 支付失败,跳转回选购页面</string>
+
+    <string name="txt_exit"> 已退出刷脸支付</string>
+    <string name="txt_timeout"> 操作超时</string>
+    <string name="txt_other_pay"> 已退出刷脸支付</string>
+    <string name="txt_other"> 抱歉未支付成功，请重新支付</string>
+    <string name="smilepay_txt_limit"> 刷脸支付超出限额，请选用其他支付方式</string>
+    <string name="smilepay_txt_ebalance_not_enough"> 账户余额不足，支付失败</string>
+    <string name="smilepay_txt_bankcard_ebalance_not_enough"> 账户余额不足，支付失败</string>
+    <string name="smilepay_txt_fail"> 抱歉未支付成功，请重新支付</string>
+    <string name="smilepay_txt_success"> 刷脸支付成功</string>
+
+    <string name="text_login">登录</string>
+    <string name="user_saleid">用户销售ID:</string>
+    <string name="back">返回</string>
+    <string name="hasnot_goods">当前商品没有库存</string>
+
+    <string name="zhi_tip">支付宝</string>
+    <string name="wei_tip">微信支付</string>
+    <string name="empty_good_list">商品列表为空</string>
+    <string name="en_empty_good_list">Product list is empty</string>
+    <!--    英文-->
+
+
+    <string name="en_surplus_text">Surplus</string>
+    <string name="en_money_type_text">¥ </string>
+    <string name="en_shopping_cart">Shopping Cart</string>
+    <string name="en_goto_pay_text">Go to settlement</string>
+    <string name="en_goods_num_text">Total number of goods:</string>
+    <string name="en_goods_total_money_text">Total:</string>
+    <string name="en_chinese_text">CHINESE</string>
+    <string name="en_english_text">ENGLISH</string>
+    <string name="en_french_text">FRENCH</string>
+    <string name="en_cart_empty_tip">Your shopping cart is empty, come to buy it now!.</string>
+    <string name="en_has_three_good_text">You can add up to %1$d items</string>
+    <string name="en_add_text">ADD</string>
+    <string name="en_pay_by_code_text">Mobile phone scanning QR code payment</string>
+    <string name="en_pay_by_face_text">Face payment</string>
+    <string name="en_pay_by_band_card_text">Pay by credit card</string>
+    <string name="en_point_look_face_text">Click brush face</string>
+    <string name="en_use_band_card_tip_text">Click to enter</string>
+    <string name="en_urgent_tel_text">Emergency call:</string>
+    <string name="en_look_face_tip_text">Please align your face to the center of the screen</string>
+    <string name="en_pay_success_text">购买成功 Successful purchase</string>
+    <string name="en_take_away_goods_text">You have finished the payment. Please take your goods</string>
+    <string name="en_goto_first_text">Back to home page</string>
+    <string name="en_pay_fail_text">购买失败 The purchase failed</string>
+    <string name="en_return_pay_text">Return payment</string>
+    <string name="en_user_land_text">User login</string>
+    <string name="en_edit_username_text">Please enter your username</string>
+    <string name="en_edit_password_text">Please enter your password</string>
+    <string name="en_land_text">Login</string>
+    <string name="en_add_success_text">Added successfully</string>
+    <string name="en_shipments_want_text">出货中&#8230;,请稍后</string>
+    <string name="en_shipments_success_text">出货成功:请取走你的货物</string>
+    <string name="en_shipments_fail_text">   出货失败:请电话联系技术人员</string>
+
+    <string name="en_shipments_want_en_text">In shipment&#8230;,Please wait</string>
+    <string name="en_shipments_success_en_text">Shipment success: please take your goods</string>
+    <string name="en_shipments_fail_en_text">   Shipment failure: please call the technician</string>
+
+    <string name="en_empty_cart_not_pay">The current shopping cart is empty, please purchase goods.</string>
+    <string name="en_delete_success">deleted Successfully</string>
+    <string name="en_empty_text"> </string>
+
+    <string name="en_pay_success_goto_result"> 支付成功,跳转出货页面</string>
+    <string name="en_pay_fail_goto_goods"> 支付失败,跳转回选购页面</string>
+
+    <string name="en_txt_exit"> 已退出刷脸支付</string>
+    <string name="en_txt_timeout"> 操作超时</string>
+    <string name="en_txt_other_pay"> 已退出刷脸支付</string>
+    <string name="en_txt_other"> 抱歉未支付成功，请重新支付</string>
+    <string name="en_smilepay_txt_limit"> 刷脸支付超出限额，请选用其他支付方式</string>
+    <string name="en_smilepay_txt_ebalance_not_enough"> 账户余额不足，支付失败</string>
+    <string name="en_smilepay_txt_bankcard_ebalance_not_enough"> 账户余额不足，支付失败</string>
+    <string name="en_smilepay_txt_fail"> 抱歉未支付成功，请重新支付</string>
+    <string name="en_smilepay_txt_success"> 刷脸支付成功</string>
+
+    <string name="en_text_login">Login</string>
+    <string name="en_user_saleid">SalesID:</string>
+
+    <string name="en_back">Back</string>
+    <string name="en_hasnot_goods">Current merchandise is not in stock</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败</string>
+
+
+    <string name="en_zhi_tip">Alipay</string>
+    <string name="en_wei_tip">Wechat Payment</string>
+    <string name="no_good">已售罄</string>
+    <string name="en_no_good">Sold out</string>
+
+    <string name="point_pos">POS机位置</string>
+    <string name="choice_tip">请将银行卡选择一种方式刷卡支付:</string>
+    <string name="choice_tip1">① 请将银行卡放到POS机屏幕上方区域进行感应支付:</string>
+    <string name="choice_tip2">② 请将银行卡磁条面朝向POS机内侧，将磁卡匀速划过磁卡卡槽</string>
+    <string name="choice_tip3">③ 请将银行卡IC卡芯片面朝上，插入POS机下方IC卡槽内</string>
+    <string name="edit_psd_tip">操作二:请输入密码</string>
+    <string name="post_card_tip">操作一:请持卡刷卡</string>
+    <string name="cancel_image_tip">取消交易支付请按红色按钮</string>
+    <string name="en_point_pos">POS MACHINE IS HERE</string>
+    <string name="en_choice_tip">Please choose a method of bank card payment operation:</string>
+    <string name="en_choice_tip1">① Please put the bank card in the upper area of the POS machine screen for induction "di" payment:</string>
+    <string name="en_choice_tip2">② Please face the magnetic stripe side of the bank card toward the inside of the POS machine, and slide the magnetic card through the magnetic card slot at a constant speed；</string>
+    <string name="en_choice_tip3">③ Please insert the bank card IC card chip face up and insert it into the IC card slot under the POS machine</string>
+    <string name="en_edit_psd_tip">Operation two：Please enter the password</string>
+    <string name="en_post_card_tip">Operation one：Please swipe your card</string>
+    <string name="en_cancel_image_tip">To cancel the transaction payment, please press the red button</string>
+
+    <string name="in_create_order">创建订单中，请稍后...</string>
+    <string name="create_order_fail_back">创建订单失败，请回选购页面重新购买</string>
+
+    <string name="en_in_create_order">创建订单中，请稍后...</string>
+    <string name="en_create_order_fail_back">创建订单失败，请回选购页面重新购买</string>
+
+
+    <string name="net_error">网络异常，请检查网络状态</string>
+    <string name="en_net_error">Network exception, please check the network status</string>
+
+</resources>

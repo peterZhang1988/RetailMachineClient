@@ -1,0 +1,404 @@
+﻿syntax = "proto3";
+package DDRAIServiceProto;
+
+enum eRspType {
+	eSuccess = 0;
+	eNotConnected = 1;
+	eInternalError = 2;
+	eDenied = 3;
+}
+
+enum eRetailEnableType
+{
+	eEnable = 0;
+	eDisable = 1;
+}
+message notifyRecognizingStatus
+{
+    eRetailEnableType type = 1;
+}
+message reqRetailRecognizing
+{
+	eRetailEnableType type = 1;
+}
+
+message rspRetailRecognizing
+{
+    eRspType ret = 1;
+}
+message reqAllSellsRecord
+{
+    int32 startnum = 1;
+	int32 neednums = 2;
+}
+message rspAllSellsRecord
+{
+    message SellRecord
+	{
+	    bytes selltime = 1;
+	    bytes productname = 2;
+	    int32 paytype = 3;
+	    bytes ordercode = 4;
+	    float unitprice = 5;
+	    int32 sellnum = 6;
+	    float totalprice = 7;
+	}
+	int32 totalnums = 1;
+	repeated SellRecord AllSellsRecord = 2;
+    
+}
+message reqStockInfo
+{
+    bytes content = 1;
+}
+message rspStockInfo
+{
+    message StockInfo
+	{
+	    bytes goodsID = 1;
+	    bytes goodsName = 2;
+	    int32 pathID = 3;
+		bytes imageLanUri = 4;
+		bytes imageWanUri = 5;
+		int32 remainNum =6;
+		int32 maxNum = 7;
+	}
+	repeated StockInfo stockInfo = 1;
+}
+message reqGoodsDetail
+{
+    bytes GoodsID = 1;
+}
+message rspGoodsDetail
+{
+    bytes GoodsID = 1;
+    bytes goodsName = 2;
+	bytes description = 3;
+	bytes shelflife = 4;
+	bytes productdate = 5;
+	bytes imageLanUri = 6;
+	bytes imageWanUri = 7;
+	bytes unitprice = 8;
+}
+//获取地图运行记录
+message reqGetMapRecords
+{
+	int32 startnum = 1;//从第n项开始获取，每次获取最多一页的内容
+	int32 neednums = 2;
+}
+
+message SalesRecord
+{
+	enum eResult {
+		eSuccess = 0;		//售货成功
+		eTimeOut = 1;		//售货超时
+		eDeliveryFailed = 2;	//出货失败
+		eDeliveryError = 3;	//售卖故障
+	}
+	int64 starttime = 1;
+	int64 endtime = 2;
+	int64 duration = 3;
+	int32 salesnum = 4;
+	float posX = 5;
+	float posY = 6;
+	eResult result = 7;
+}
+
+message MapEvenLog
+{
+	bytes mapname = 1;
+	int64 starttime = 2;
+	int64 endtime = 3;
+	int64 duration = 4;
+	int32 salesnum = 5;
+	repeated SalesRecord record = 6;
+}
+
+message rspGetMapRecords
+{
+
+	int32 totalnums = 1;
+	repeated MapEvenLog maplog = 2;
+}
+
+//获取报错记录
+message reqGetErrorRecords
+{
+	int32 startnum = 1;
+	int32 neednums = 2;
+}
+
+message ErrorLog
+{	
+	enum eReason {
+		eEmergencyStop = 0;		//急停
+		eEmergencyStopEnd = 1;		//急停结束
+		eResetStart = 2;            //按下复位恢复行走
+		eAntiCollisionStop = 3;		//防碰撞急停
+		eAntiCollisionStopEnd = 4;	//防碰撞急停结束
+		eMotorFailure = 5;		//电机实效
+		ePalletStop = 6;		//货盘停止
+		ePalletStockTimeOut = 7;	//货柜存货未取超时
+		//售卖安卓相关
+		eEmbeddedSystemLose = 8; //售卖平板嵌入式连接失败
+		eServerLose = 9; //售卖HTTP后台失联
+	    ePayOutError = 10; //售卖出货失败
+		eStealAlarm = 11;//售卖防盗告警
+	}
+	int64 time = 1;
+	eReason reason = 2;
+}
+
+message rspGetErrorRecords
+{
+
+	int32 totalnums = 1;
+	repeated ErrorLog errorlog = 2;
+}
+//获取充电记录
+message reqGetChargingRecords
+{
+	int32 startnum = 1;
+	int32 neednums = 2;
+}
+
+message ChargingLog
+{	
+	enum eChargingResult {
+		eSuccess = 0;
+		eTimeOut = 1;
+	}	
+	int64 starttime = 1;
+	int64 endtime = 2;
+	int64 duration = 3;
+	float beforeC = 4;
+	float afterC = 5;
+	eChargingResult result = 6;
+}
+
+message rspGetChargingRecords
+{
+	int32 totalnums = 1;
+	repeated ChargingLog charginglog = 2;
+}
+
+//客户端到服务端，请求播放TTS
+message reqPlayTTS
+{
+	bytes content = 1;//播放文字内容
+	int32 level = 2;
+}
+//服务端返回客户端
+message rspPlayTTS
+{
+	eRspType ret = 1;
+}
+
+message notifyThermal
+{
+	int32 nFirePosX = 1;
+	int32 nFirePosY = 2;
+	int32 nFireWidth = 3;
+	int32 nFireHeight = 4;
+	float fFireMaxTem = 5;
+	float fFireAvgTem = 6;
+	int32 nFireAlarmPointCount = 7;
+}
+
+message FaceInfo
+{
+	message Rect
+	{
+		int32 top = 1;
+		int32 bottom = 2;
+		int32 left = 3;
+		int32 right = 4;
+	}
+	enum eFaceType
+	{
+		eWriteList = 0;
+		eBreakList = 1;
+	}
+	int32 nID = 1;//人脸ID
+	bytes nName = 2;//人脸名称
+	bytes facelabel = 3;//人脸标签
+	eFaceType type = 4;//人脸状态（黑名单，白名单）
+	bytes ImageData = 5;//人脸图像数据 jpg
+	Rect rect = 6;//人脸区域
+	int64 time = 7;	//std::time_t 	localtime(time) 时间戳
+}
+
+message notifyFaceDetection
+{
+	repeated FaceInfo faces = 1; //人脸数据列表
+}
+
+message reqAddFace
+{
+	FaceInfo face = 1;
+}
+message rspAddFace
+{
+	eRspType ret = 1;
+}
+
+message reqDetectFace
+{
+	int32 maxFaceCount =  1;//获取最大人脸数，为1则取最大范围的人脸
+}
+message rspDetectFace
+{
+	repeated FaceInfo faces = 1; //人脸数据列表
+}
+
+enum eNetType
+{
+	eLocal = 0;
+	eRemote = 1;
+}
+message reqVideoAddress{
+	eNetType type = 1;
+}
+
+message rspVideoAddress
+{	
+	message VideoInfo{
+		bytes address = 1;
+		bytes name = 2;
+	}
+	repeated VideoInfo info = 1;
+	eNetType type = 2;
+	bytes AudioAddress = 3;
+}
+
+message reqAudioTalk
+{
+	enum eOpMode {
+		eStart = 0;
+		eStop = 1;
+	}
+	eOpMode opType = 1;
+	eNetType netType = 2;
+}
+enum eTalkStatus
+{
+	ETS_START_OK = 0;    //成功对讲（服务端可接收）
+	ETS_USE_BY_OTHER = 1;//被其它客户端占用
+	ETS_STOP_OK = 2;//成功停止
+	ETS_NO_USER_CONNECTED_WITH_IP = 3;//流服务没有被相应IP的客户端连接
+	ETS_UNKNOWN_ERROR = 4;//末知错误
+}
+message rspAudioAiTalk
+{
+	eTalkStatus status = 1;
+	string error = 2;
+}
+
+message notifyGoodsInfoSet
+{
+    message GoodsInfo
+	{
+	    int32 pathID = 1;
+		bytes goodsName = 2;
+		int32 stockNums = 3;
+	}
+	repeated GoodsInfo goodinfo = 1;
+}
+
+message reqGrammarStart
+{
+	string param = 1;
+}
+message rspGrammarStart
+{
+	string ret = 1;
+}
+message reqGrammarEnd
+{
+	string param = 1;
+}
+message rspGrammarEnd
+{
+	string ret = 1;
+}
+message notifyGrammarResult
+{
+	bytes content = 1;
+}
+message reqGrammarStream
+{
+	bytes buf = 1;
+}
+message reqSpeechConfig
+{
+    string param = 1;
+}
+message rspSpeechConfig
+{
+    reqUpdateSpeechConfig speechconfig = 1;
+}
+message reqUpdateSpeechConfig
+{
+	message ObstacleSpeech
+	{
+	    bytes text = 1;
+		int32 interval = 2;
+		int32 priority = 3;
+	}
+	message SustainedSpeech
+	{
+	    bytes text = 1;
+		int32 interval = 2;
+		int32 priority = 3;
+	}
+	int32 closestatus = 1; //关闭播报设置为1；遇障播报设置为2；持续播报设置为3。
+	ObstacleSpeech obstacle = 2;
+	SustainedSpeech sustained = 3;
+}
+message rspUpdateSpeechConfig
+{
+    eRspType ret = 1;
+}
+
+message reqModuleSpeech
+{
+    int32 closestatus = 1; //关闭播报设置为1；遇障播报设置为2；持续播报设置为3。
+    bytes text = 2;
+	int32 interval = 3;
+	int32 priority = 4;
+}
+message rspModuleSpeech
+{
+    eRspType ret = 1;
+}
+
+message AndroidPage
+{
+	enum eAndroidPage
+	{
+		enPurchasePage = 0;				// 选购      --- 看距离点击时间(20秒)，没有人点击恢复行走 
+		enPaymentMethodPage = 1;	   	// 支付		 all pause	
+		enFaceRecognitionPage = 2;	   	// 人脸支付
+		enShippingPage = 3;				// 出货页面
+		enConfigurationPage = 4;		// 配置页面
+		enShippingSuccessPage = 5;		// 出货成功页面
+		enShippingFailPage = 6;			// 出货失败页面
+		enPayByCardPage = 7;	   	// 刷卡支付
+	}
+	eAndroidPage page = 1;
+	int32  nInterval    = 2;				//点击时间的时间间隔
+}
+
+message reqGetRobotID
+{
+	string SalesID = 1;//售货ID 修改配置文件
+}
+
+message rspGetRobotID
+{
+	string RobotID = 1;//机器人ID  配置文件获取
+}
+message rspTest
+{
+  string strTestMsg = 1;
+}

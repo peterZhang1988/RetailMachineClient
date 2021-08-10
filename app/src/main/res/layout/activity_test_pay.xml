@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:context=".ui.TestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tvResult"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tvPushUp"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:gravity="center"
+            android:text="上推 11 14"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/tvLift0"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_toRightOf="@id/tvPushUp"
+            android:gravity="center"
+            android:text="0层 12"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/tvLift1"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvLift0"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="1层 12"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/tvLift2"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvLift1"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="2层 12"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/tvLift3"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvLift2"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="3层 12"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/tvLift4"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvLift3"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="4层 12"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/tvLift5"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvLift4"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="5层 12"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/tvLift6"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvLift5"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="6层 12"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/tvLift7"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvLift6"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="7层 12"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/query_is_empty"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvLift7"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="货兜是否为空 1c"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/query_is_protect"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/query_is_empty"
+            android:layout_alignLeft="@+id/tvLift0"
+            android:gravity="center"
+            android:text="接近开关 18"
+            android:textSize="@dimen/txt_size_test" />
+
+
+        <Button
+            android:id="@+id/btPullDown"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/tvPushUp"
+            android:gravity="center"
+            android:text="下推 14"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/btcx"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/btPullDown"
+            android:gravity="center"
+            android:text="查询撑杆货门状态 15"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/btCPushGoods"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/btcx"
+            android:gravity="center"
+            android:text="电机转动推出货物 01 05"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/btStart"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/btCPushGoods"
+            android:layout_alignLeft="@id/btCPushGoods"
+            android:gravity="center"
+            android:text="查询电机状态 01 03"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/btCXLifter"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/btStart"
+            android:gravity="center"
+            android:text="查询升降机状态 11 13"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/btCTake"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/btCXLifter"
+            android:gravity="center"
+            android:text="出货 全流程"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/btClear"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/btCTake"
+            android:text="清除"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/closeDoorCase"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/btClear"
+            android:text="查询关门的条件 光幕1c 升降机19"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/query_row"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/closeDoorCase"
+            android:text="查询升降机第几层 19"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/etNumber"
+            android:layout_toRightOf="@id/tvLift1"
+            android:text="开始转动"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/startLogin"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_toRightOf="@id/etNumber"
+            android:text="查询"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/starttcp"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/etNumber6"
+            android:layout_alignLeft="@+id/startLogin"
+            android:text="修改"
+            android:textSize="@dimen/txt_size_test" />
+
+
+
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/starttcp"
+            android:layout_alignLeft="@+id/startLogin"
+            android:text="返回"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/login_out"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/back"
+            android:layout_alignLeft="@+id/startLogin"
+            android:text="退出"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/save_set"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/login_out"
+            android:layout_alignLeft="@+id/startLogin"
+            android:text="保存配置"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/set_name1"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_toRightOf="@+id/startLogin"
+            android:text="选购查询的间隔(s)"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/set_name2"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name1"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="支付页倒计时(s)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name3"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name2"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="查询支付状态间隔(s)"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/set_name4"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name3"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="刷卡页倒计时(s)"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/set_name5"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name4"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="出货成功后，倒计时返回首页(s)"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/set_name6"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name5"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="关门总倒计时(s)"
+            android:textSize="@dimen/txt_size_test" />
+
+        <Button
+            android:id="@+id/set_name7"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name6"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="指令超时重试次数"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name8"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name7"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="货盘楼层查询(s)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name9"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name8"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="移动到指定层次数(次)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name10"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name9"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="查询电机超时(s)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name11"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name10"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="操作电机超时(次)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name12"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name11"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="货盘复位超时(次)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name13"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name12"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="查询推杆超时(次)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name14"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name13"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="开门执行超时(次)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name15"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name14"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="舱门打开总超时(s)"
+            android:textSize="@dimen/txt_size_test" />
+        <Button
+            android:id="@+id/set_name16"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_name15"
+            android:layout_alignLeft="@+id/set_name1"
+            android:text="关门后查询防夹手时长(s)"
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/set_value1"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_toRightOf="@id/set_name1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/set_value2"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value1"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value3"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value2"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value4"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value3"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value5"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value4"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value6"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value5"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value7"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value6"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value8"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value7"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value9"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value8"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value10"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value9"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value11"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value10"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value12"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value11"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value13"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value12"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value14"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value13"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value15"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value14"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+        <EditText
+            android:id="@+id/set_value16"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@id/set_value15"
+            android:layout_alignLeft="@+id/set_value1"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="@dimen/width_size_test"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_toRightOf="@id/tvLift0"
+            android:gravity="center"
+            android:inputType="text"
+            android:text=""
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/etNumber0"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@+id/startLogin"
+            android:layout_alignLeft="@+id/startLogin"
+            android:gravity="center"
+            android:hint="1层"
+            android:inputType="text"
+            android:text=""
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/etNumber1"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@+id/etNumber0"
+            android:layout_alignLeft="@+id/startLogin"
+            android:gravity="center"
+            android:hint="2层"
+            android:inputType="text"
+            android:text=""
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/etNumber2"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@+id/etNumber1"
+            android:layout_alignLeft="@+id/startLogin"
+            android:gravity="center"
+            android:hint="3层"
+            android:inputType="text"
+            android:text=""
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/etNumber3"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@+id/etNumber2"
+            android:layout_alignLeft="@+id/startLogin"
+            android:gravity="center"
+            android:hint="4层"
+            android:inputType="text"
+            android:text=""
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/etNumber4"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@+id/etNumber3"
+            android:layout_alignLeft="@+id/startLogin"
+            android:gravity="center"
+            android:hint="5层"
+            android:inputType="text"
+            android:text=""
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/etNumber5"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@+id/etNumber4"
+            android:layout_alignLeft="@+id/startLogin"
+            android:gravity="center"
+            android:hint="6层"
+            android:inputType="text"
+            android:text=""
+            android:textSize="@dimen/txt_size_test" />
+
+        <EditText
+            android:id="@+id/etNumber6"
+            android:layout_width="@dimen/width_size_test2"
+            android:layout_height="@dimen/height_size_test"
+            android:layout_below="@+id/etNumber5"
+            android:layout_alignLeft="@+id/startLogin"
+            android:gravity="center"
+            android:hint="7层"
+            android:inputType="text"
+            android:text=""
+            android:textSize="@dimen/txt_size_test" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="800dp"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:text="发送内容:"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+</RelativeLayout>

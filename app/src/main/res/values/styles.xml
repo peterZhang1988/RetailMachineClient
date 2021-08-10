@@ -1,0 +1,107 @@
+<resources>
+    <!-- Base application theme. -->
+<!--    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--    </style>-->
+
+<!--    <style name="toolBar">-->
+<!--        <item name="colorControlNormal">#ffffff</item>-->
+<!--        <item name="android:homeAsUpIndicator">@mipmap/cha</item>-->
+<!--        <item name="android:titleTextStyle">@style/titlestyle</item>-->
+
+<!--    </style>-->
+    <style name="titlestyle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- 对话框默认样式 -->
+<!--    <style name="BaseDialogStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">&lt;!&ndash; @android:style/Theme.Dialog &ndash;&gt;-->
+<!--        &lt;!&ndash; 无边框 &ndash;&gt;-->
+<!--        <item name="android:windowFrame">@null</item>-->
+<!--        &lt;!&ndash; 浮在 Activity 之上 &ndash;&gt;-->
+<!--        <item name="android:windowIsFloating">true</item>-->
+<!--        &lt;!&ndash; 半透明 &ndash;&gt;-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+<!--        &lt;!&ndash; 背景透明 &ndash;&gt;-->
+<!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+<!--        &lt;!&ndash; 遮盖层 &ndash;&gt;-->
+<!--        <item name="android:backgroundDimEnabled">true</item>-->
+<!--        &lt;!&ndash; 无标题 &ndash;&gt;-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        &lt;!&ndash; 动画效果 &ndash;&gt;-->
+<!--        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>-->
+<!--        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>-->
+<!--        &lt;!&ndash; Base.Theme.AppCompat.Light.Dialog.Alert 特有的属性，用于指定默认宽度，这里需要禁用 &ndash;&gt;-->
+<!--        <item name="android:windowMinWidthMajor">0dp</item>-->
+<!--        <item name="android:windowMinWidthMinor">0dp</item>-->
+<!--        &lt;!&ndash; 解决 ActionBar 占位导致 Dialog 无法全屏显示的问题 &ndash;&gt;-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--        &lt;!&ndash; ActionMode 覆盖 Actionbar，不顶下来 &ndash;&gt;-->
+<!--        <item name="windowActionModeOverlay">true</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+
+<!--        &lt;!&ndash; 不感知敏感的切换 &ndash;&gt;-->
+<!--        &lt;!&ndash;<item name="android:configChanges">orientation|screenSize|keyboardHidden</item>&ndash;&gt;-->
+<!--        &lt;!&ndash; 默认隐藏输入法 &ndash;&gt;-->
+<!--        &lt;!&ndash;<item name="android:windowSoftInputMode">stateHidden</item>&ndash;&gt;-->
+<!--        &lt;!&ndash; Dialog 全屏显示 &ndash;&gt;-->
+<!--        &lt;!&ndash;<item name="android:windowFullscreen">true</item>&ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="customDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置显示对话框内容区域背景  -->
+        <item name="android:windowBackground">@mipmap/bg_good</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--是否允许对话框的背景变暗 如果允许为true背景就变暗了。  -->
+        <item name="android:backgroundDimEnabled">false</item>
+
+    </style>
+
+    <!-- 缩放动画 -->
+    <style name="ScaleAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+    </style>
+
+    <!-- ios 动画 -->
+    <style name="IOSAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_ios_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_ios_out</item>
+    </style>
+
+    <!-- 顶部弹出动画 -->
+    <style name="TopAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_top_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_out</item>
+    </style>
+
+    <!-- 底部弹出动画 -->
+    <style name="BottomAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_out</item>
+    </style>
+
+    <!-- 左边弹出动画 -->
+    <style name="LeftAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_left_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_left_out</item>
+    </style>
+
+    <!-- 右边弹出动画 -->
+    <style name="RightAnimStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_right_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_right_out</item>
+    </style>
+<!--    <style name="activityTheme" parent="Theme.AppCompat.Light">-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+<!--    </style>-->
+
+</resources>

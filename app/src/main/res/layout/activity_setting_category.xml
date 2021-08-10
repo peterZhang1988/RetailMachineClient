@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_all_page"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="26sp"
+            android:text="返回"
+            android:background="@drawable/bt_bg_lan"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:text="后台管理"
+            />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="保存"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/device_test"
+            android:text="设备检测"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_edit"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+        <Button
+            android:id="@+id/version"
+            android:text="软件版本"
+            android:textColor="@color/black"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_edit"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="26sp"
+
+            />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/device_setting"
+        android:text="设备配置"
+        android:layout_below="@+id/line1"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        />
+
+    <Button
+        android:id="@+id/refund"
+        android:text="POS退款"
+        android:layout_below="@+id/device_test"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        />
+
+    <Button
+        android:id="@+id/loginout"
+        android:text="退出APP"
+        android:textColor="#f20c00"
+        android:layout_below="@+id/refund"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="26sp"
+        />
+
+
+
+</LinearLayout>

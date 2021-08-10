@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="total_msg_textsize">12sp</dimen>
+    <dimen name="total_msg_margin_size">10dp</dimen>
+
+    <dimen name="width_size_test">100dp</dimen>
+    <dimen name="width_size_test2">100dp</dimen>
+    <dimen name="height_size_test">30dp</dimen>
+    <dimen name="txt_size_test">8sp</dimen>
+
+    <dimen name="bar_height">28dp</dimen>
+
+    <dimen name="show_edt_width">90dp</dimen>
+    <dimen name="show_edt_height">90dp</dimen>
+    <dimen name="show_edt_txsize">20dp</dimen>
+</resources>

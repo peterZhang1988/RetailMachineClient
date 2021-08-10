@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_all_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bt_bg_lan"
+            android:text="返回"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="设备配置"
+
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bt_bg_lan"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:text="保存"
+            android:textSize="26sp"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出货数量:"
+
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="26sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="域名设置:"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="500dp"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="语言设置:"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:orientation="horizontal"
+        android:textSize="26sp">
+
+        <Switch
+            android:text="中文"
+            android:id="@+id/lan_cn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+        <Switch
+            android:text="英文"
+            android:id="@+id/lan_en"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+        <Switch
+            android:text="法文"
+            android:id="@+id/lan_fn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+        <Button
+            android:id="@+id/switch_sales_id"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="切换账号"
+            android:background="@drawable/bt_bg_lan"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="26sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="214dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/item_commodity_bg">
+    <TextView
+        android:id="@+id/tvDiscounts"
+        android:layout_width="74dp"
+        android:layout_height="14dp"
+
+        android:text="满20减2"
+        android:textSize="12sp"
+        android:textColor="@color/itemTextRed"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="textSelectColor">#6200EE</color>
+    <color name="textDefaultColor">#B0B0B0</color>
+    <color name="itemTextRed">#EE2C2C</color>
+    <color name="itemTextGray">#B0B0B0</color>
+    <color name="itemTextBlack">#292929</color>
+    <color name="itemTextWhite">#FFFFFF</color>
+    <color name="lineColor">#E6E6E6</color>
+
+    <color name="default_circle_indicator_page_color">#4f3592</color>
+    <color name="default_circle_indicator_fill_color">#cac2de</color>
+    <color name="default_circle_indicator_stroke_color">#cac2de</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="default_txt_lan">#8D8891</color>
+    <color name="default_pls">#888892</color>
+
+
+</resources>
